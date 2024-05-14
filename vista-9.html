@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago</title>
+    <link rel="stylesheet" href="./css/style-9.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main-content">
+            <div class="header">
+                <h1>Tipo de pago</h1>
+            </div>
+            <div class="payment-options">
+                <div class="payment-option">
+                    <input type="radio" id="credit-card" name="payment-method" value="credit-card">
+                    <label for="credit-card">Tarjetas de débito y crédito</label>
+                    <div class="credit-card-details">
+                        <label for="card-number">Nº de tarjeta:</label>
+                        <input type="text" id="card-number" name="card-number">
+                        <label for="expiration-date">mm/aa:</label>
+                        <input type="text" id="expiration-date" name="expiration-date">
+                        <label for="cvv">CVV:</label>
+                        <input type="text" id="cvv" name="cvv">
+                    </div>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="cash" name="payment-method" value="cash">
+                    <label for="cash">Pago efectivo</label>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="delivery" name="payment-method" value="delivery">
+                    <label for="delivery">Pago contraentrega</label>
+                </div>
+            </div>
+            <div class="order-summary">
+                <h2>Total del pedido</h2>
+                <p>S/. 420.00</p>
+            </div>
+            <button class="next-button">Siguiente</button>
+        </div>
+    </div>
+</body>
+
+</html>
