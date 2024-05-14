@@ -1,0 +1,144 @@
+body, html {
+    background-color: #0B3954;
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    max-width: 1440px; /* Establece el ancho máximo de la página */
+    height: 1024px; /* Establece la altura de la página */
+    padding: 0;
+}
+
+aside {
+    background-color: #BDD6E8; 
+    width: 4%; 
+    height: 100vh; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    display: flex;
+    flex-direction: column; /* Organiza los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+aside img {
+    margin: 10px 0; /* Espacio entre las imágenes */
+    max-width: 100%; /* Ajusta el ancho de las imágenes al contenedor */
+}
+
+main {
+    margin: auto; /* Esto centrará el main horizontalmente */
+    max-width: 800px; /* Establece un ancho máximo para el main */
+    height: 100%; /* Ocupa el 100% de la altura disponible */
+    padding: 0 20px; /* Añade relleno opcional a los lados del main */
+}
+
+
+.titulo {
+    text-align: center;
+}
+
+.texto {
+    margin: 130px 0 0; /* Margen superior de 45px, y 0 para los márgenes inferior y lateral */
+    /* El margen se define en el orden superior, derecho, inferior, izquierdo */
+    color: white; /* Cambia el color del texto a blanco */
+    font-family: 'Poppins', sans-serif;
+}
+
+.principal {
+    text-align: center; /* Centra el texto y los elementos en el centro */
+    margin-top: 30px; /* Ajusta el margen superior según sea necesario */
+    flex-grow: 20;
+}
+
+.barra_busqueda {
+    width: 594px;
+    height: 25px;
+    margin: auto; /* Para centrar horizontalmente */
+    border-radius: 20px;
+    border: 1px solid #000;
+    padding: 16px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center; /* Para centrar verticalmente los elementos */
+}
+
+.buscar_imagen {
+    width: 21px;
+    height: 21px;
+    margin-right: 14px; /* Espacio entre la imagen y el campo de búsqueda */
+}
+
+.barra_input {
+    border: none;
+    padding: 4px 4px 4px 8px;
+    outline: none;
+    background-color: #ffffff;
+    width: calc(100% - 36px); /* Se resta el ancho del icono y el padding para ajustar correctamente */
+    font-family: 'Poppins', sans-serif; /* Cambia la fuente a Poppins */
+    font-size: 20px; /* Establece el tamaño del texto en 20px */
+}
+.botones {
+    text-align: center; /* Centra los botones */
+    margin-top: 20px; /* Espacio entre la barra de búsqueda y los botones */
+}
+
+.boton1{
+    margin: 0 10px; /* Espacio entre los botones */
+    padding: 10px 20px; /* Ajusta el relleno del botón */
+    font-size: 22px; /* Tamaño del texto del botón */
+    background-color: #E0FF4F; /* Color de fondo del botón */
+    color: #0B3954; /* Color del texto del botón */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+.boton2{
+    margin: 0 10px; /* Espacio entre los botones */
+    padding: 10px 20px; /* Ajusta el relleno del botón */
+    font-size: 22px; /* Tamaño del texto del botón */
+    background-color: #BDD6E8; /* Color de fondo del botón */
+    color: #0B3954; /* Color del texto del botón */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.imagenes {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las imágenes se envuelvan en filas */
+    justify-content: center;
+    margin-top: 40px; /* Espacio entre las filas */
+}
+.contenedor-imagenes {
+    margin: auto; /* Centra el contenedor horizontalmente */
+    max-width: 800px; /* Establece un ancho máximo para el contenedor */
+}
+
+.fila {
+    display: flex;
+    justify-content: space-between; /* Espacio uniforme entre las imágenes */
+    width: 100%; /* Asegura que las filas ocupen todo el ancho disponible */
+    margin-bottom: 30px; /* Espacio entre las filas */
+}
+
+.imagen_descripcion {
+    width: calc(33.33% - 40px); /* Reducir el ancho y aumentar el espacio entre imágenes */
+    margin: 0 20px; /* Aumentar el espacio entre las imágenes */
+    text-align: left; /* Alinear el texto a la izquierda */
+
+}
+
+
+.imagen_descripcion img {
+    width: 174px; /* Establece el ancho de la imagen */
+    height: 177px; /* Establece la altura de la imagen */
+    border-radius: 10px; /* Agrega bordes redondeados a las imágenes */
+}
+
+.imagen_descripcion p {
+    color: white;
+    font-size: 16px;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif; /* Utiliza la fuente Poppins */
+    font-weight: bold; /* Establece el texto en negrita */
+}
+
