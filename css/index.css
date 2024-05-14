@@ -1,17 +1,23 @@
 body {
-    background-color: #0B3954;
     background: linear-gradient(to bottom, #0B3954 10%, #12608D 25%, #187EBA);
     color: #fff;
     font-family: "Poppins", sans-serif;
+    margin: 0;
 }
 
-li {
+ul {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 a {
     text-decoration: none;
     color: #fff;
+}
+
+.header {
+    padding: 8px;
 }
 
 .nav {
@@ -56,21 +62,62 @@ a {
 
 .nav__auth {
     display: flex;
+    position: relative;
+    flex-grow: 5;
+    flex-direction: column;
+    margin-right: 16px;
+}
+
+.nav__auth__div {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.nav__auth__div:hover {
+    color: #E0FF4F;
+}
+
+.nav__auth__main {
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-grow: 5;
+    box-sizing: border-box;
     border-radius: 8px;
     border: 2px solid #E0FF4F;
     padding: 8px 16px;
-    margin-right: 20px;
+    width: 100%;
 }
 
-.nav__auth__login--active, .nav__auth__register--active {
-    display: flex;
+.nav__auth__div__span, .nav__auth__dropdown-img {
+    cursor: pointer;
 }
 
-.nav__auth__login--inactive, .nav__auth__register--inactive {
+.nav__auth__dropdown {
+    position: relative;
     display: none;
+    width: 100%;
+}
+
+.nav__auth__dropdown--active {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav__auth__dropdown__div {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 16px;
+    background-color: #145b85;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #E0FF4F;
+    z-index: 2;
+}
+
+.nav__auth__dropdown__a:hover {
+    color: #E0FF4F;
 }
 
 .nav__auth__dropdown-img {
@@ -80,6 +127,24 @@ a {
 .nav__fav {
     flex-grow: 1;
     height: 50px;
+}
+
+.div-main {
+    position: relative;
+}
+
+.background {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    margin-top: -7px;
+    z-index: 1;
+}
+
+.background--active {
+    display: flex;
 }
 
 .welcome {
@@ -152,11 +217,16 @@ a {
     border-radius: 100%;
 }
 
-.categories__a-container {
+.categories__a {
     background-color: #0B3954;
     width: 50%;
     border-radius: 8px;
     margin-top: 16px;
+}
+
+.categories__a:hover {
+    color: #D0FF00;
+    cursor: pointer;
 }
 
 .mid-banner__img {
@@ -166,6 +236,7 @@ a {
 .featured {
     display: flex;
     flex-direction: column;
+    padding: 16px;
 }
 
 .featured__title {
@@ -217,12 +288,13 @@ a {
 .featured__div__products {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding: 32px 0;
 }
 
 .featured__div__container {
     display: flex;
     flex-direction: column;
-    padding: 16px;
 }
 
 .featured__div__details {
@@ -231,4 +303,52 @@ a {
     gap: 8px;
     margin-top: 16px;
     text-align: center;
+}
+
+.footer {
+    background-color: #0B3954;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.footer__div__container {
+    padding: 20px;
+}
+
+.footer__div__container-img {
+    width: 50%;
+}
+
+.footer__div__img {
+    width: 100%;
+}
+
+.footer__div__title {
+    display: inline;
+}
+
+.footer__div__ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+    font-weight: 500;
+}
+
+.footer__div__a:hover {
+    color: #D0FF00;
+}
+
+.footer__hr {
+    width: 100%;
+}
+
+.footer__rights {
+    text-align: center;
+    justify-self: center;
+    align-self: center;
 }
