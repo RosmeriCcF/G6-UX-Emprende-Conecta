@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    width: 60px;
+    background-color: #2C3E50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.sidebar img {
+    width: 30px;
+    height: 30px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #34495E;
+    color: #FFFFFF;
+}
+
+.banner {
+    background-color: #2C3E50;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    background-color: #E1E64B;
+    border: 5px solid #FFFFFF;
+    border-radius: 50%;
+    position: absolute;
+    top: 35vh;
+    left: calc(50% - 100px);
+}
+
+.store-info {
+    margin-top: 150px;
+    text-align: center;
+    padding: 20px;
+}
+
+.store-info ul {
+    list-style-type: none; /* Eliminar puntos de la lista */
+    padding: 0;
+}
+
+.store-info .social-media img {
+    width: 30px; /* Asegurar el mismo tamaño para los logos */
+    height: 30px;
+    margin: 0 10px;
+}
+
+.store-info .follow, .store-info .message {
+    background-color: #E1E64B;
+    color: #34495E;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+}
