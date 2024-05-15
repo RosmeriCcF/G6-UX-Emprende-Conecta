@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0B3954;
+    margin: 0 auto;
+    position: relative;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+aside {
+    background-color: #BDD6E8;
+    width: 4%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+aside img {
+    margin: 10px 0;
+    max-width: 80%;
+}
+
+.chat-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px;
+    /* Para dejar espacio para el input-container */
+    overflow-y: auto;
+}
+
+.chat {
+    padding: 20px;
+}
+
+/*.message {
+    max-width: 70%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    word-wrap: break-word;
+    clear: both;
+} */
+
+.message-container {
+    margin-right: 80px;
+    /* Ajusta este valor según el ancho de la barra lateral */
+}
+
+.message {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.received {
+    justify-content: flex-start;
+}
+
+.sent {
+    justify-content: flex-end;
+}
+
+.message-content {
+    max-width: 70%;
+    padding: 8px 12px;
+    border-radius: 20px;
+}
+
+.received .message-content {
+    background-color: #ffffff;
+    margin-right: auto;
+}
+
+.sent .message-content {
+    background-color: #add8e6;
+    margin-left: auto;
+}
+
+.input-container {
+    position: fixed;
+    bottom: 0;
+    left: 60px;
+    /* Alinea el input-container con el borde izquierdo de la barra lateral */
+    width: calc(100% - 80px);
+    /* Ajusta el ancho para que el input-container tenga el mismo ancho que el área de chat */
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
