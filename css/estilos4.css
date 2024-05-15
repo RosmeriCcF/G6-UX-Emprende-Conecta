@@ -1,0 +1,142 @@
+body, html {
+    background-color: #0B3954;
+    margin: 0 auto; 
+    max-width: 1440px;
+    height: 1024px; 
+    padding: 0;
+}
+
+aside {
+    background-color: #BDD6E8; 
+    width: 4%; 
+    height: 100vh; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+aside img {
+    margin: 10px 0; 
+    max-width: 100%; 
+}
+main {
+    margin: auto; 
+    max-width: 800px; 
+    height: 100%; 
+    padding: 0 20px; 
+}
+
+
+.titulo {
+    text-align: center;
+}
+
+.texto {
+    margin: 130px 0 0; 
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.principal {
+    text-align: center;
+    margin-top: 30px; 
+    flex-grow: 20;
+}
+
+.barra_busqueda {
+    width: 594px;
+    height: 25px;
+    margin: auto; 
+    border-radius: 20px;
+    border: 1px solid #000;
+    padding: 16px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+.buscar_imagen {
+    width: 21px;
+    height: 21px;
+    margin-right: 14px; 
+}
+
+.barra_input {
+    border: none;
+    padding: 4px 4px 4px 8px;
+    outline: none;
+    background-color: #ffffff;
+    width: calc(100% - 36px); 
+    font-family: 'Poppins', sans-serif; 
+    font-size: 20px; 
+}
+.botones {
+    text-align: center; 
+    margin-top: 20px;
+}
+
+.boton1{
+    margin: 0 10px; 
+    padding: 10px 20px; 
+    font-size: 22px; 
+    background-color: #E0FF4F; 
+    color: #0B3954; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+.boton2{
+    margin: 0 10px; 
+    padding: 10px 20px; 
+    font-size: 22px; 
+    background-color: #BDD6E8; 
+    color: #0B3954; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.imagenes {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    margin-top: 40px; 
+}
+.contenedor-imagenes {
+    margin: auto; 
+    max-width: 800px; 
+}
+
+.fila {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; 
+    margin-bottom: 30px; 
+}
+
+.imagen_descripcion {
+    width: calc(33.33% - 40px);
+    margin: 0 20px; 
+    text-align: left; 
+
+}
+
+
+.imagen_descripcion img {
+    width: 174px; 
+    height: 177px;
+    border-radius: 10px; 
+}
+
+.imagen_descripcion p {
+    color: white;
+    font-size: 16px;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: bold; 
+}
+
