@@ -4,8 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Iniciar sesión </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
-    
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__div-img nav__div-img-logo">
+                <a href="index.html" class="nav__div-img__a">
+                    <img src="imagenes/Logo-Emprende-Conecta.png" class="nav__logo">
+                </a>
+            </div>
+            <div class="nav__search-bar">
+                <img src="imagenes/iconos/buscar.png" class="nav__search-bar__img">
+            </div>
+            <div class="nav__title">
+                <h2 id="nav__title__text"> Emprende&Conecta </h2>
+            </div>
+            <div class="nav__auth">
+                <div class="nav__auth__div" id="nav__auth__div">
+                    <div class="nav__auth__dropdown" id="dropdown-nav">
+                        <div class="nav__auth__dropdown__div">
+                            <a href="" class="nav__auth__dropdown__a nav__auth__dropdown__login" id="login">Inicia sesión</a>
+                            <a href="" class="nav__auth__dropdown__a nav__auth__dropdown__register" id="register">Regístrate</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            </div>
+                <img src="imagenes/iconos/favoritos.png" class="nav__fav">
+            </div>
+        </nav>
+    </header>
+    <hr>
+    <div class="main-container">
+        <main class="main-container__main">
+            <div class="div-img">
+                <img src="imagenes/Logo-Emprende-Conecta.png" id="div-img__img">
+            </div>
+            <div class="div-form">
+                <form class="div-form__form">
+                    <input type="text" name="email" class="div-form__form__input" placeholder="Correo electrónico o teléfono" autocomplete="off">
+                    <input type="text" name="email" class="div-form__form__input" placeholder="Contraseña" autocomplete="off">
+                    <button type="input" id="div-form__form__submit"> Iniciar Sesión </button>
+                </form>
+            </div>
+            <hr class="separator-line">
+            <div class="div-login">
+                <div class="div-login__facebook div-login__network">
+                    <img class="div-login__network_img" src="imagenes/iconos/fb.png">
+                    <div class="div-login__network__text">
+                        <p> Continuar con Facebook </p>
+                    </div>
+                </div>
+                <div class="div-login__apple div-login__network">
+                    <img class="div-login__network_img" src="imagenes/iconos/apple.png">
+                    <div class="div-login__network__text">
+                        <p> Continuar con Apple </p>
+                    </div>
+                </div>
+                <div class="div-login__google div-login__network">
+                    <img class="div-login__network_img" src="imagenes/iconos/google.png">
+                    <div class="div-login__network__text">
+                        <p> Continuar con Google </p>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="footer__div">
+                    <div class="footer__div__1">
+                        <p> ¿Aún no eres usuario? <a href="#"> Regístrate </a> </p>
+                    </div>
+                    <div class="footer__div__2">
+                        <a href="#"> ¿Olvidaste tu contraseña? </a>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
 </body>
 </html>
