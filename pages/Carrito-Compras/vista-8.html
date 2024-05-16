@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de compras</title>
+    <link rel="stylesheet" href="../../css/styleview8.css">
+
+</head>
+
+<body>
+    <aside>
+        <a href="../Dashboard-Emprendimiento/pagina1.html"><img src="../../imagenes/iconos/home.png" alt="Home"></a>
+        <a href="vista-8.html"><img src="../../imagenes/iconos/carrito-compras.png" alt="Carrito de compras"/></a>
+        <a href="../Dashboard-Emprendimiento/pagina4.html"><img src="../../imagenes/iconos/favoritos.png" alt="Favoritos" /></a>
+        <a href="../Dashboard-Emprendimiento/pagina6.html"><img src="../../imagenes/iconos/perfil.png" alt="Perfil" /></a>
+        <a href="View7.html"><img src="../../imagenes/iconos/mensajería.png" alt="Mensajería" /></a>
+    </aside>
+    <main>
+        <section class="mi-carrito">
+            <h2>Mi carrito</h2>
+            <div class="productos">
+                <div class="producto">
+                    <div class="imagen">
+                        <img src="./imagenes/youl.png" alt="">
+                    </div>
+                    <div class="info">
+                        <p class="nombre">Pulseras</p>
+                        <p class="tienda">Yolu</p>
+                        <p class="precio">S/30.00</p>
+                        <div class="contador">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="producto">
+                    <div class="imagen">
+                        <img src="./imagenes/rosel.png" alt="">
+                    </div>
+                    <div class="info">
+                        <p class="nombre">Cesta Rocio</p>
+                        <p class="tienda">Rosel</p>
+                        <p class="precio">S/50.00</p>
+                        <div class="contador">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="producto">
+                    <div class="imagen">
+                        <img src="./imagenes/mi-carrito-vista8.png" alt="">
+                    </div>
+                    <div class="info">
+                        <p class="nombre">Air Force One Shad</p>
+                        <p class="tienda">Klyn</p>
+                        <p class="precio">S/290.00</p>
+                        <div class="contador">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="producto">
+                    <div class="imagen">
+                        <img src="./imagenes/Luigi.png" alt="">
+                    </div>
+                    <div class="info">
+                        <p class="nombre">Zapatillas</p>
+                        <p class="tienda">Luigi</p>
+                        <p class="precio">S/120.00</p>
+                        <div class="contador">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tipo-entrega">
+            <h2>Tipo de entrega</h2>
+            <div class="opciones">
+                <div class="opcion">
+                    <input class="checkbox" id="retiro-tienda" type="radio">
+                    <div>
+                        <label for="retiro-tienda">Retiro en tienda</label>
+                        <p class="nombre-tienda">Tienda A</p>
+                        <p class="precio">Gratis</p>
+                    </div>
+                </div>
+                <div class="opcion">
+
+                    <input class="checkbox" type="radio" id="despacho-domicilio">
+                    <div>
+                        <label for="despacho-domicilio">Despacho a domicilio</label>
+                        <p class="nombre-tienda">En Metro, La Molina</p>
+                        <p class="precio">S/ 5.00</p>
+                    </div>
+
+                </div>
+            </div>
+            <hr>
+            <div class="resumen">
+                <p>Total del pedido: <span>S/ 420.00</span></p>
+                <p>Costo de envío: <span>S/ 0.00</span></p>
+                <p>Total a pagar: <span>S/ 420.00</span></p>
+            </div>
+            <button class="siguiente">Siguiente</button>
+        </section>
+    </main>
+</body>
+
+</html>

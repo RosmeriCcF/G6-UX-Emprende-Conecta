@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0B3954;
+    margin: 0 auto;
+    position: relative;
+    padding: 0;
+}
+
+aside {
+    background-color: #BDD6E8;
+    width: 4%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+}
+
+aside img {
+    margin: 10px 0;
+    max-width: 80%;
+}
+
+main {
+    margin-left: 80px;
+    /* Ajusta el margen izquierdo para que el chat no se superponga con la barra lateral */
+    max-width: calc(100% - 80px);
+    /* Ajusta el ancho para que el chat no se superponga con la barra lateral */
+    height: 100%;
+    padding: 0 20px;
+    position: relative;
+}
+
+.chat {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px;
+    /* Para dejar espacio para el input-container */
+    overflow-y: auto;
+}
+
+.message {
+    margin-bottom: 10px;
+    position: relative;
+    /* Asegura que los elementos dentro de message respeten este posicionamiento */
+}
+
+.received {
+    margin-right: auto;
+    /* Alinea la burbuja verde más a la izquierda */
+}
+
+.sent {
+    margin-left: auto;
+    /* Alinea la burbuja celeste más a la derecha */
+}
+
+.message-content {
+    max-width: 70%;
+    padding: 8px 12px;
+    border-radius: 20px;
+}
+
+.received .message-content {
+    background-color: #E0FF4F;
+}
+
+.sent .message-content {
+    background-color: #add8e6;
+}
+
+.input-container {
+    position: fixed;
+    bottom: 0;
+    left: 50px;
+    /* Alinea el input-container con el borde izquierdo de la barra lateral */
+    width: calc(100% - 80px);
+    /* Ajusta el ancho para que el input-container tenga el mismo ancho que el área de chat */
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
