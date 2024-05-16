@@ -121,6 +121,7 @@ a {
     padding: 8px 16px;
     background-color: #145b85;
     width: 100%;
+    box-sizing: border-box;
     border: 1px solid #E0FF4F;
     z-index: 2;
 }
@@ -252,18 +253,11 @@ a {
     display: flex;
     flex-direction: column;
     padding: 16px;
-    width: 100%;
-}
-
-.featured__div {
-    display: flex;
-    flex-direction: column;
 }
 
 .featured__title {
     align-self: center;
     position: relative;
-    margin-bottom: 16px;
 }
 
 .featured__title::after {
