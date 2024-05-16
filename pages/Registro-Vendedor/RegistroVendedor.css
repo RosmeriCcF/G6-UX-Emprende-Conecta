@@ -1,27 +1,64 @@
-.header_img{
-    height: 60px;
-    width: 60px;
+.header_registro {
+    padding: 2rem;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.form_registro_vendedor{
+.header_logo{
+    width: 60px;
+    height: 60px;
+}
+
+.header_iconos{
+    width: 30px;
+    height: 30px;
+}
+
+#nav__title__text{
+    color: #BDD6E8;
+}
+
+.section_title{
+    color: #E0FF4F;
+    font-size: 1.5rem;
+}
+
+#form_pag_1, #form_pag_2, #form_pag_3{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     padding: 5%;
-    padding-left: 10%;
+    gap: 20px;
+    margin-top: 0;
+}
+
+
+.div-centered, #form_pag_2, #form_pag_3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.div-centered{
+    margin-top: 5%;
 }
 
 .container_row{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content:space-around;
 }
 
 .container_column{
     display: flex;
     flex-direction: column;
     width: 50%;
+    align-items: center;
 }
 
 .input_container {
@@ -31,7 +68,7 @@
     width: 60%;
 }
 
-.input_container label {
+.input_container label{
     margin-bottom: 5px; 
 }
 
@@ -76,4 +113,27 @@ p{
     height: 250px;
     border: 0;
     margin: 5%;
+}
+
+.btn{
+    align-self: center;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: #D0FF00;
+}
+
+.profile-header{
+    height: 200px;
+    width: 80%;
+    background-color: #BDD6E8;
+    background-size: cover;
+}
+.profile-picture{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #64889E;
+    background-size: cover;
 }

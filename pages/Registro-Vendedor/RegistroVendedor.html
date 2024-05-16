@@ -10,16 +10,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Registro de Vendedor</title>
 </head>
-    <script src="functions.js"></script>
+    <script src="script.js"></script>
 <body>
-    <header> 
-        <h1>Emprende&Conecta</h1>
-        <img src="../../imagenes/Logo-Emprende-Conecta.png" class="header_img">
+    <header class="header_registro">
+        <div >
+            <a href="../../index.html">
+                <img src="../../imagenes/iconos/atras.png" class="header_iconos">
+            </a>
+        </div>
+        <div class="nav__title">
+            <h2 id="nav__title__text"> Emprende&Conecta </h2>
+        </div>
+        <div class="header_img">
+            <a href="../../index.html">
+                <img src="../../imagenes/Logo-Emprende-Conecta.png" class="header_logo">
+            </a>
+        </div>
     </header>
     <main>
         <form class="form_registro_vendedor">
-            <div class="form_pag_1">
-                <h1 class="welcome__title welcome__title-2">Datos básicos:</h1>
+            <div id="form_pag_1">
+                <h1 class="section_title" style= "padding-left: 8%;">Datos básicos:</h1>
                 <div class="container_row">
                     <div class="container_column">
                         <div class="input_container">
@@ -39,18 +50,15 @@
                             <label for="horario_atencion">Horario de atención:</label>
                             <div class="input_container_horario">
                                 <input type="radio" id="horario_no_disponible" name="horario_atencion" value="Horario no disponible" required>
-                                <label for="horario_no_disponible" class="input_difuso">Horario no disponible</label>
-                                <label for="horario_no_disponible" class="input_p">No mostrar el horario.</label>
+                                <label for="horario_no_disponible">Horario no disponible. No mostrar el horario.</label>
                             </div>
                             <div class="input_container_horario">
                                 <input type="radio" id="siempre_abierto" name="horario_atencion" value="Siempre abierto" required>
-                                <label for="siempre_abierto" class="input_difuso">Siempre abierto</label>
-                                <label for="siempre_abierto" class="input_p">El lugar está abierto las 24 horas, todos los días.</label>
+                                <label for="siempre_abierto">Siempre abierto. El lugar está abierto las 24 horas, todos los días.</label>
                             </div>
                             <div class="input_container_horario">
                                 <input type="radio" id="horario_habitual" name="horario_atencion" value="Horario habitual" required>
-                                <label for="horario_habitual" class="input_difuso">Horario habitual</label>
-                                <label for="horario_habitual" class="input_p">Ingresa un horario específico.</label>
+                                <label for="horario_habitual">Horario habitual. Ingresa un horario específico.</label>
                             </div>
                         </div>
                     </div>
@@ -78,13 +86,13 @@
                         </div>
                     </div>
                 </div>
-                <button class="boton-continuar-pagina1" type="submit">Siguiente</button>
+                <button id="boton-continuar-pagina1" class="btn welcome__a" type="button">Siguiente</button>
             </div>
-            <div class="form_pag_2">
-                <h1 class="welcome__title welcome__title-2">Personaliza tu emprendimiento:</h1>
+            <div id="form_pag_2" style= "display: none;">
+                <h1 class="section_title">Personaliza tu emprendimiento:</h1>
                 <p class="welcome__feature__p">Usa tu logotipo y/o una imagen de portada que las personas puedan asociar fácilmente con tu emprendimiento</p>
                 <div class="profile-header"></div>
-                <div class="profile-picture"></div>
+                <div class="profile-picture" style="margin-top: -100px;"></div>
                 <label for="restricciones">Últimos detalles:</label>
                 <p class="welcome__feature__p">¡Listo! Ahora consideramos importante que indiques algunas restricciones a tu emprendimiento</p>
                 <div class="container_column">
@@ -103,26 +111,36 @@
                         <input type="radio" id="contraentrega" name="contraentrega" value="Pago contraentrega">
                         <label for="restricciones">Pago contraentrega</label>  
                 </div>
-                <button class="boton-continuar-pagina2" type="submit">Siguiente</button>
+                <button id="boton-continuar-pagina2" class="btn welcome__a" type="button">Siguiente</button>
             </div>
-            <div class="form_pag_3">
-                <h1 class="welcome__title welcome__title-2">Datos personales:</h1>
+            <div id="form_pag_3" style= "display: none;">
+                <h1 class="section_title">Datos personales:</h1>
                 <p class="welcome__feature__p">Registra tus datos personales para tu perfil personal y para que Emprende&Conecta pueda contactarse contigo.</p>
                     <div class="container_column">
-                        <div class="profile-picture"></div>
-                        <input type="text" id="nombres" name="nombres" placeholder="Nombres" required>
-                        <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required>
-                        <input type="tel" id="telefono_personal" name="telefono_personal" placeholder="Teléfono personal" required>
+                        <div class=input-container>
+                            <div class="profile-picture"></div>
+                        </div>
+                        <div class="div-centered">
+                            <div class="input_container">
+                                <input type="text" id="nombres" name="nombres" placeholder="Nombres" required>
+                            </div>
+                            <div class="input_container">
+                                <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+                            </div>
+                            <div class="input_container">
+                                <input type="tel" id="telefono_personal" name="telefono_personal" placeholder="Teléfono personal" required>
+                            </div>
+                        </div>
                     </div>
-                    <button class="boton-registrar" type="submit">Registrar</button>
+                    <button id="boton-registrar" class="btn welcome__a" type="submit">Registrar</button>
                 </div>
             </div>
         </form>
-        <div class="form-registro-exitoso">
+        <div class="form-registro-exitoso" style= "display: none;">
             <h2>¡REGISTRO EXISTOSO!</h2>
             <p>Sus datos y el de su emprendimiento se han registrado correctamente</p>
-            <button class="boton-registrar">Iniciar</button>
-            <button class="boton-registrar">Guía rápida</button>
+            <button class="btn">Iniciar</button>
+            <button class="btn">Guía rápida</button>
         </div>
     </main>
     <footer class="footer">

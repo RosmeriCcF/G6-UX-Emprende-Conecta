@@ -9,10 +9,12 @@ document.addEventListener("DOMContentLoaded", function() {
         event.preventDefault();
         seccion1.style.display = "none";
         seccion2.style.display = "flex";
+        seccion3.style.display = "none";
     });
 
     botonContinuarPagina2.addEventListener("click", function(event) {
         event.preventDefault();
+        seccion1.style.display = "none";
         seccion2.style.display = "none";
         seccion3.style.display = "flex";
     });

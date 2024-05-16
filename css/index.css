@@ -1,8 +1,18 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background: linear-gradient(to bottom, #0B3954 10%, #12608D 25%, #187EBA);
     color: #fff;
     font-family: "Poppins", sans-serif;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 ul {
@@ -111,7 +121,6 @@ a {
     padding: 8px 16px;
     background-color: #145b85;
     width: 100%;
-    box-sizing: border-box;
     border: 1px solid #E0FF4F;
     z-index: 2;
 }
@@ -127,6 +136,10 @@ a {
 .nav__fav {
     flex-grow: 1;
     height: 50px;
+}
+
+.header-hr {
+    width: 100%;
 }
 
 .div-main {
@@ -154,6 +167,8 @@ a {
 
 .welcome__container-text {
     flex-grow: 2;
+    display: flex;
+    flex-direction: column;
 }
 
 .welcome__title-2 {
@@ -199,7 +214,7 @@ a {
 
 .categories__container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 16px;
     padding: 16px 32px 32px 32px;
 }
@@ -237,11 +252,18 @@ a {
     display: flex;
     flex-direction: column;
     padding: 16px;
+    width: 100%;
+}
+
+.featured__div {
+    display: flex;
+    flex-direction: column;
 }
 
 .featured__title {
     align-self: center;
     position: relative;
+    margin-bottom: 16px;
 }
 
 .featured__title::after {
@@ -287,7 +309,7 @@ a {
 
 .featured__div__products {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 16px;
     padding: 32px 0;
 }
@@ -309,11 +331,13 @@ a {
     background-color: #0B3954;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .footer__div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    width: 100%;
 }
 
 .footer__div__container {
@@ -321,7 +345,9 @@ a {
 }
 
 .footer__div__container-img {
-    width: 50%;
+    width: 60%;
+    justify-self: center;
+    align-self: center;
 }
 
 .footer__div__img {
@@ -351,4 +377,35 @@ a {
     text-align: center;
     justify-self: center;
     align-self: center;
+}
+
+@media screen and (max-width: 800px) {
+    .welcome {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .welcome__a {
+        align-self: center;
+        width: 100%;
+    }
+
+    .welcome-img-container {
+        margin-top: 32px;
+        max-width: 300px;
+        align-self: center;
+    }
+
+    .welcome__img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
