@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="RegistroVendedor.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Registro de Vendedor</title>
+</head>
+    <script src="script.js"></script>
+<body>
+    <header class="header_registro">
+        <div >
+            <a href="../Inicio-Sesion/desktop16.html">
+                <img src="../../imagenes/iconos/atras.png" class="header_iconos">
+            </a>
+        </div>
+        <div class="nav__title">
+            <h2 id="nav__title__text"> Emprende&Conecta </h2>
+        </div>
+        <div class="header_img">
+            <a href="../Homepage/index.html">
+                <img src="../../imagenes/Logo-Emprende-Conecta.png" class="header_logo">
+            </a>
+        </div>
+    </header>
+    <main>
+        <form class="form_registro_vendedor">
+            <div id="form_pag_1">
+                <h1 class="section_title" style= "padding-left: 8%;">Datos básicos:</h1>
+                <div class="container_row">
+                    <div class="container_column">
+                        <div class="input_container">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Nombre del emprendimiento" required>
+                        </div>
+                        <div class="input_container">
+                            <label for="correo">Contacto:</label>
+                            <input type="email" id="correo" name="correo" placeholder="Correo electrónico" required>
+                        </div>
+                        <div class="input_container">
+                            <label for="presentacion">Presentación:</label>
+                            <textarea id="presentacion" name="presentacion" rows="10" required placeholder="Lo mejor para tu negocio digital. Detalles que conectan"></textarea>
+                            <p class="input_message_alert">Describa de qué trata su emprendimiento</p>
+                        </div>
+                        <div class="input_container">
+                            <label for="horario_atencion">Horario de atención:</label>
+                            <div class="input_container_horario">
+                                <input type="radio" id="horario_no_disponible" name="horario_atencion" value="Horario no disponible" required>
+                                <label for="horario_no_disponible">Horario no disponible. No mostrar el horario.</label>
+                            </div>
+                            <div class="input_container_horario">
+                                <input type="radio" id="siempre_abierto" name="horario_atencion" value="Siempre abierto" required>
+                                <label for="siempre_abierto">Siempre abierto. El lugar está abierto las 24 horas, todos los días.</label>
+                            </div>
+                            <div class="input_container_horario">
+                                <input type="radio" id="horario_habitual" name="horario_atencion" value="Horario habitual" required>
+                                <label for="horario_habitual">Horario habitual. Ingresa un horario específico.</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_column">
+                        <div class="input_container">
+                            <label for="categoria">Categoría:</label>
+                            <input type="search" id="categoria" name="categoria" placeholder="Buscar categorías" required>
+                            <p>Categorías populares</p>
+                            <div class="container_row">
+                                <div class="text_block">Pastelería</div>
+                                <div class="text_block">Salud/Belleza</div>
+                                <div class="text_block">Zapatería</div>
+                            </div>
+                        </div>
+                        <div class="input_container">
+                            <label for="direccion">Ubicación:</label>
+                            <input type="search" id="direccion" name="direccion" placeholder="Direccion" required>
+                            <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15607.204037641413!2d-77.09902870120462!3d-12.057208260884622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c946680d0099%3A0xc6def8804064a4e9!2sUniversidad%20Nacional%20Mayor%20de%20San%20Marcos!5e0!3m2!1ses!2spe!4v1715665675776!5m2!1ses!2spe" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="input_container">
+                            <label for="telefono">Conecta WhatsApp:</label>
+                            <p class="welcome__feature__p">Para que el público de tu emprendimiento te envíe mensajes por esta plataforma.</p>
+                            <input type="tel" id="telefono" name="telefono" placeholder="N° Celular" required>
+                            <p class="input_message_alert">Te enviaremos un código por WhatsApp. Solo debes ingresar el número de teléfono personal o el de tu emprendimiento.</p>
+                        </div>
+                    </div>
+                </div>
+                <button id="boton-continuar-pagina1" class="btn welcome__a" type="button">Siguiente</button>
+            </div>
+            <div id="form_pag_2" style= "display: none;">
+                <h1 class="section_title">Personaliza tu emprendimiento:</h1>
+                <p class="welcome__feature__p">Usa tu logotipo y/o una imagen de portada que las personas puedan asociar fácilmente con tu emprendimiento</p>
+                <div class="profile-header"></div>
+                <div class="profile-picture" style="margin-top: -100px;"></div>
+                <label for="restricciones">Últimos detalles:</label>
+                <p class="welcome__feature__p">¡Listo! Ahora consideramos importante que indiques algunas restricciones a tu emprendimiento</p>
+                <div class="container_column">
+                    <label for="restricciones">Tipo de entrega</label>
+                        <input type="radio" id="retiro_tienda" name="retiro_tienda" value="Retiro en tienda">
+                        <label for="restricciones">Retiro en tienda</label>
+                        <input type="radio" id="despacho_domicilio" name="despacho_domicilio" value="Despacho a domicilio">
+                        <label for="restricciones">Despacho a domicilio</label>    
+                </div>
+                <div class="container_column">
+                    <label for="restricciones">Tipo de pago</label>
+                        <input type="radio" id="debito_credito" name="debito_credito" value="Tarjetas de débito y crédito">
+                        <label for="restricciones">Tarjetas de débito y crédito</label>
+                        <input type="radio" id="pago_efectivo" name="pago_efectivo" value="Pago efectivo">
+                        <label for="restricciones">Pago efectivo</label>  
+                        <input type="radio" id="contraentrega" name="contraentrega" value="Pago contraentrega">
+                        <label for="restricciones">Pago contraentrega</label>  
+                </div>
+                <button id="boton-continuar-pagina2" class="btn welcome__a" type="button">Siguiente</button>
+            </div>
+            <div id="form_pag_3" style= "display: none;">
+                <h1 class="section_title">Datos personales:</h1>
+                <p class="welcome__feature__p">Registra tus datos personales para tu perfil personal y para que Emprende&Conecta pueda contactarse contigo.</p>
+                    <div class="container_column">
+                        <div class=input-container>
+                            <div class="profile-picture"></div>
+                        </div>
+                        <div class="div-centered">
+                            <div class="input_container">
+                                <input type="text" id="nombres" name="nombres" placeholder="Nombres" required>
+                            </div>
+                            <div class="input_container">
+                                <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+                            </div>
+                            <div class="input_container">
+                                <input type="tel" id="telefono_personal" name="telefono_personal" placeholder="Teléfono personal" required>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="boton-registrar" class="btn welcome__a" type="submit">Registrar</button>
+                </div>
+            </div>
+        </form>
+        <div class="form-registro-exitoso" style= "display: none;">
+            <h2>¡REGISTRO EXISTOSO!</h2>
+            <p>Sus datos y el de su emprendimiento se han registrado correctamente</p>
+            <button class="btn">Iniciar</button>
+            <button class="btn">Guía rápida</button>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__div">
+            <div class="footer__div__container footer__div__container-img">
+                <img src="../../imagenes/Logo-Emprende-Conecta.png" class="footer__div__img">
+            </div>
+            <div class="footer__div__container footer__div__policies">
+                <h3 class="footer__div__title footer__div__policies__title"><u>Políticas</u></h3>
+                <ul class="footer__div__ul footer__div__policies__ul">
+                    <li class="footer__div__li footer_div__policies__li"><a href="" class="footer__div__a footer__div__policies__a">Política de reembolso</a></li>
+                    <li class="footer__div__li footer_div__policies__li"><a href="" class="footer__div__a footer__div__policies__a">Política de privacidad</a></li>
+                    <li class="footer__div__li footer_div__policies__li"><a href="" class="footer__div__a footer__div__policies__a">Términos de servicio</a></li>
+                </ul>
+            </div>
+            <div class="footer__div__container footer__div__about">
+                <h3 class="footer__div__title footer__div__about__title"><u>Acerca de</u></h3>
+                <ul class="footer__div__ul footer__div__about__ul">
+                    <li class="footer__div__li footer_div__about__li"><a href="" class="footer__div__a footer__div__about__a">Información de contacto</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="footer__hr">
+        <h4 class="footer__rights">COPYRIGHT © 2024 EMPRENDE&CONECTA. ALL RIGHTS RESERVED</h4>
+    </footer>
+</body>
+</html>
