@@ -8,7 +8,7 @@ body, html {
 
 aside {
     background-color: #BDD6E8; 
-    width: 4%; 
+    width: 60px; 
     height: 100vh; 
     position: fixed; 
     top: 0; 
@@ -18,8 +18,9 @@ aside {
     align-items: center; 
 }
 aside img {
-    margin: 10px 0; 
-    max-width: 100%; 
+    margin: 20px 0;
+    width: 30px;
+    height: 30px;
 }
 main {
     margin: auto; 
