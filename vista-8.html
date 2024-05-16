@@ -4,28 +4,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vista 8</title>
-    <link rel="stylesheet" href="./css/style-8.css">
+    <title>Vista8 - Carrito y Tipo de entrega</title>
+    <link rel="stylesheet" href="./css/styleview8.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="sidebar">
-            <nav>
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="main-content">
-            <div class="header">
-                <h1>Carrito de compras</h1>
-            </div>
-            <div class="cart-items">
-                <div class="cart-item">
-                    <img src="product1.jpg" alt="Producto 1" class="product-image
-                </body>
+    <aside>
+        <img src="imagenes/iconos/home.png">
+        <img src="imagenes/iconos/carrito-vista8.png">
+        <img src="imagenes/iconos/favoritoos.png">
+        <img src="imagenes/iconos/perfil-vista7.png">
+        <img src="imagenes/iconos/notificaciones-vista8.png">
+        <img src="imagenes/iconos/mensajería.png">
+    </aside>
+    <main>
+        <section class="mi-carrito">
+            <h2>Mi carrito</h2>
+            <div class="productos">
+                <div class="producto">
+                    <div class="imagen">
+                        <img src="./imagenes/mi-carrito-vista8.png" alt="">
+                    </div>
+                    <div class="info">
+                        <p class="nombre">Producto 1</p>
+                        <p class="tienda">Tienda A</p>
+                        <p class="precio">S/100.00</p>
+                        <div class="contador">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                    </div>
+                </div>
 
-                </html>
+                <div class="producto">
+                    <div class="imagen">
+                        <img src="./imagenes/mi-carrito-vista8.png" alt="">
+                    </div>
+                    <div class="info">
+                        <p class="nombre">Producto 1</p>
+                        <p class="tienda">Tienda A</p>
+                        <p class="precio">S/100.00</p>
+                        <div class="contador">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="producto">
+                    <div class="imagen">
+                        <img src="./imagenes/mi-carrito-vista8.png" alt="">
+                    </div>
+                    <div class="info">
+                        <p class="nombre">Producto 1</p>
+                        <p class="tienda">Tienda A</p>
+                        <p class="precio">S/100.00</p>
+                        <div class="contador">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="producto">
+                    <div class="imagen">
+                        <img src="./imagenes/mi-carrito-vista8.png" alt="">
+                    </div>
+                    <div class="info">
+                        <p class="nombre">Producto 1</p>
+                        <p class="tienda">Tienda A</p>
+                        <p class="precio">S/100.00</p>
+                        <div class="contador">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tipo-entrega">
+            <h2>Tipo de entrega</h2>
+            <div class="opciones">
+                <div class="opcion">
+                    <input type="checkbox" id="retiro-tienda">
+                    <label for="retiro-tienda">Retiro en tienda</label>
+                    <p class="nombre-tienda">Tienda A</p>
+                    <p class="precio">Gratis</p>
+                </div>
+                <div class="opcion">
+                    <input type="checkbox" id="despacho-domicilio">
+                    <label for="despacho-domicilio">Despacho a domicilio</label>
+                    <p class="nombre-tienda">En Metro, La Molina</p>
+                    <p class="precio">S/ 5.00</p>
+                </div>
+            </div>
+            <hr>
+            <div class="resumen">
+                <p>Total del pedido: <span>S/ 420.00</span></p>
+                <p>Costo de envío: <span>S/ 0.00</span></p>
+                <p>Total a pagar: <span>S/ 420.00</span></p>
+            </div>
+            <button class="siguiente">Siguiente</button>
+        </section>
+    </main>
+</body>
+
+</html>

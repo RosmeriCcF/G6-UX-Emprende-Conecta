@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0B3954;
+    margin: 0 auto;
+    position: relative;
+    padding: 0;
+}
+
+aside {
+    background-color: #BDD6E8;
+    width: 4%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+}
+
+aside img {
+    margin: 10px 0;
+    max-width: 80%;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.mi-carrito,
+.tipo-entrega {
+    background-color: #BDD6E8;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    overflow: hidden;
+    /* Para evitar el scroll */
+}
+
+.producto {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.producto .imagen {
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.contador {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.contador button {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+.contador span {
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.tipo-entrega .opcion {
+    display: flex;
+    flex-direction: column;
+    /* Para que los elementos se muestren uno debajo del otro */
+    align-items: flex-start;
+    /* Para alinear los elementos a la izquierda */
+    margin-bottom: 10px;
+}
+
+.tipo-entrega .opcion label {
+    margin-left: 5px;
+}
+
+.tipo-entrega .resumen {
+    margin-top: 20px;
+}
+
+.tipo-entrega .resumen p {
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.siguiente {
+    background-color: #E0FF4F;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    align-self: flex-start;
+}

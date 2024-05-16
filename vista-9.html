@@ -4,57 +4,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pago</title>
-    <link rel="stylesheet" href="./css/style-9.css">
+    <title>Vista9-Pago</title>
+    <link rel="stylesheet" href="./css/styleview9.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="sidebar">
-            <nav>
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="main-content">
-            <div class="header">
-                <h1>Tipo de pago</h1>
-            </div>
-            <div class="payment-options">
-                <div class="payment-option">
-                    <input type="radio" id="credit-card" name="payment-method" value="credit-card">
-                    <label for="credit-card">Tarjetas de débito y crédito</label>
-                    <div class="credit-card-details">
-                        <label for="card-number">Nº de tarjeta:</label>
-                        <input type="text" id="card-number" name="card-number">
-                        <label for="expiration-date">mm/aa:</label>
-                        <input type="text" id="expiration-date" name="expiration-date">
-                        <label for="cvv">CVV:</label>
-                        <input type="text" id="cvv" name="cvv">
+    <aside>
+        <img src="imagenes/iconos/home.png">
+        <img src="imagenes/iconos/carrito-vista8.png">
+        <img src="imagenes/iconos/favoritoos.png">
+        <img src="imagenes/iconos/perfil-vista7.png">
+        <img src="imagenes/iconos/notificaciones-vista8.png">
+        <img src="imagenes/iconos/mensajería.png">
+    </aside>
+    <main>
+        <section class="tipos-pago">
+            <h2>Tipo de pago</h2>
+            <div class="opciones">
+                <div class="tipo">
+                    <div class="imagen">
+                        <img src="./imagenes/debito-vista9.png" alt="">
                     </div>
+                    <p class="nombre">Tarjetas de débito y crédito</p>
                 </div>
-                <div class="payment-option">
-                    <input type="radio" id="cash" name="payment-method" value="cash">
-                    <label for="cash">Pago efectivo</label>
+                <div class="tipo">
+                    <div class="imagen">
+                        <img src="./imagenes/pagoefectivo-vista9.png" alt="">
+                    </div>
+                    <p class="nombre">Pago efectivo</p>
                 </div>
-                <div class="payment-option">
-                    <input type="radio" id="delivery" name="payment-method" value="delivery">
-                    <label for="delivery">Pago contraentrega</label>
+                <div class="tipo">
+                    <div class="imagen">
+                        <img src="./imagenes/pagocontraentrega-vista9.png" alt="">
+                    </div>
+                    <p class="nombre">Pago contraentrega</p>
                 </div>
             </div>
-            <div class="order-summary">
-                <h2>Total del pedido</h2>
-                <p>S/. 420.00</p>
+        </section>
+        <section class="datos-tarjeta">
+            <div class="tarjeta-seleccionada">
+                <div class="tipo">
+                    <div class="imagen">
+                        <img src="./imagenes/debito-vista9.png" alt="">
+                    </div>
+                    <p class="nombre">Tarjetas de débito y crédito</p>
+                </div>
+                <form>
+                    <input type="text" placeholder="N° de Tarjeta">
+                    <div class="row">
+                        <input type="text" placeholder="MM/AA">
+                        <input type="text" placeholder="CVV">
+                    </div>
+                    <button>Usar tarjeta</button>
+                    <p class="aviso">Para validar la tarjeta, cobraremos un monto mínimo. Se devolverá a la brevedad.
+                    </p>
+                </form>
             </div>
-            <button class="next-button">Siguiente</button>
-        </div>
-    </div>
+            <div class="otras-opciones">
+                <div class="tipo">
+                    <div class="imagen">
+                        <img src="./imagenes/pagoefectivo-vista9.png" alt="">
+                    </div>
+                    <p class="nombre">Pago efectivo</p>
+                </div>
+                <div class="tipo">
+                    <div class="imagen">
+                        <img src="./imagenes/pagocontraentrega-vista9.png" alt="">
+                    </div>
+                    <p class="nombre">Pago contraentrega</p>
+                </div>
+            </div>
+            <div class="resumen">
+                <p class="precio">Total del pedido: S/ 420.00</p>
+                <button class="siguiente">Siguiente</button>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
-
-
-<!-- Index -->
