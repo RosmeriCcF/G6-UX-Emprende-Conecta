@@ -1,0 +1,131 @@
+body, html {
+    background-color: #0B3954;
+    margin: 0 auto; 
+    max-width: 1440px;
+    height: 1024px; 
+    padding: 0;
+}
+
+aside {
+    background-color: #BDD6E8; 
+    width: 60px; 
+    height: 100vh; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+aside img {
+    margin: 20px 0;
+    width: 30px;
+    height: 30px;
+}
+main {
+    margin: auto; 
+    max-width: 800px; 
+    height: 100%; 
+    padding: 0 20px; 
+}
+
+
+.titulo {
+    text-align: center;
+}
+
+.texto {
+    margin: 130px 0 0; 
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.principal {
+    text-align: center;
+    margin-top: 30px; 
+    flex-grow: 20;
+}
+
+.barra_busqueda {
+    width: 594px;
+    height: 25px;
+    margin: auto; 
+    border-radius: 20px;
+    border: 1px solid #000;
+    padding: 16px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+.buscar_imagen {
+    width: 21px;
+    height: 21px;
+    margin-right: 14px; 
+}
+
+.barra_input {
+    border: none;
+    padding: 4px 4px 4px 8px;
+    outline: none;
+    background-color: #ffffff;
+    width: calc(100% - 36px); 
+    font-family: 'Poppins', sans-serif; 
+    font-size: 20px; 
+}
+.botones {
+    text-align: center; 
+    margin-top: 20px;
+}
+
+.boton1{
+    margin: 0 10px; 
+    padding: 10px 20px; 
+    font-size: 22px; 
+    background-color: #BDD6E8; 
+    color: #0B3954; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+.boton2{
+    margin: 0 10px; 
+    padding: 10px 20px; 
+    font-size: 22px; 
+    background-color: #E0FF4F; 
+    color: #0B3954; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logos {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    max-width: 70px;
+    max-height: 70px;
+    margin-right: 10px;
+}
+
+.logo span {
+    color: white;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    width: 190px;
+    text-align: left;
+    display: inline-block;
+    font-weight: bold; 
+}
