@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vista8 - Carrito y Tipo de entrega</title>
     <link rel="stylesheet" href="./css/styleview8.css">
+
 </head>
 
 <body>
@@ -23,12 +24,28 @@
             <div class="productos">
                 <div class="producto">
                     <div class="imagen">
-                        <img src="./imagenes/mi-carrito-vista8.png" alt="">
+                        <img src="./imagenes/youl.png" alt="">
                     </div>
                     <div class="info">
-                        <p class="nombre">Producto 1</p>
-                        <p class="tienda">Tienda A</p>
-                        <p class="precio">S/100.00</p>
+                        <p class="nombre">Pulseras</p>
+                        <p class="tienda">Yolu</p>
+                        <p class="precio">S/30.00</p>
+                        <div class="contador">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="producto">
+                    <div class="imagen">
+                        <img src="./imagenes/rosel.png" alt="">
+                    </div>
+                    <div class="info">
+                        <p class="nombre">Cesta Rocio</p>
+                        <p class="tienda">Rosel</p>
+                        <p class="precio">S/50.00</p>
                         <div class="contador">
                             <button>-</button>
                             <span>1</span>
@@ -42,9 +59,9 @@
                         <img src="./imagenes/mi-carrito-vista8.png" alt="">
                     </div>
                     <div class="info">
-                        <p class="nombre">Producto 1</p>
-                        <p class="tienda">Tienda A</p>
-                        <p class="precio">S/100.00</p>
+                        <p class="nombre">Air Force One Shad</p>
+                        <p class="tienda">Klyn</p>
+                        <p class="precio">S/290.00</p>
                         <div class="contador">
                             <button>-</button>
                             <span>1</span>
@@ -55,28 +72,12 @@
 
                 <div class="producto">
                     <div class="imagen">
-                        <img src="./imagenes/mi-carrito-vista8.png" alt="">
+                        <img src="./imagenes/Luigi.png" alt="">
                     </div>
                     <div class="info">
-                        <p class="nombre">Producto 1</p>
-                        <p class="tienda">Tienda A</p>
-                        <p class="precio">S/100.00</p>
-                        <div class="contador">
-                            <button>-</button>
-                            <span>1</span>
-                            <button>+</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="producto">
-                    <div class="imagen">
-                        <img src="./imagenes/mi-carrito-vista8.png" alt="">
-                    </div>
-                    <div class="info">
-                        <p class="nombre">Producto 1</p>
-                        <p class="tienda">Tienda A</p>
-                        <p class="precio">S/100.00</p>
+                        <p class="nombre">Zapatillas</p>
+                        <p class="tienda">Luigi</p>
+                        <p class="precio">S/120.00</p>
                         <div class="contador">
                             <button>-</button>
                             <span>1</span>
@@ -91,16 +92,22 @@
             <h2>Tipo de entrega</h2>
             <div class="opciones">
                 <div class="opcion">
-                    <input type="checkbox" id="retiro-tienda">
-                    <label for="retiro-tienda">Retiro en tienda</label>
-                    <p class="nombre-tienda">Tienda A</p>
-                    <p class="precio">Gratis</p>
+                    <input class="checkbox" id="retiro-tienda" type="radio">
+                    <div>
+                        <label for="retiro-tienda">Retiro en tienda</label>
+                        <p class="nombre-tienda">Tienda A</p>
+                        <p class="precio">Gratis</p>
+                    </div>
                 </div>
                 <div class="opcion">
-                    <input type="checkbox" id="despacho-domicilio">
-                    <label for="despacho-domicilio">Despacho a domicilio</label>
-                    <p class="nombre-tienda">En Metro, La Molina</p>
-                    <p class="precio">S/ 5.00</p>
+
+                    <input class="checkbox" type="radio" id="despacho-domicilio">
+                    <div>
+                        <label for="despacho-domicilio">Despacho a domicilio</label>
+                        <p class="nombre-tienda">En Metro, La Molina</p>
+                        <p class="precio">S/ 5.00</p>
+                    </div>
+
                 </div>
             </div>
             <hr>

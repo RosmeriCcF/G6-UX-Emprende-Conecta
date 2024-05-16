@@ -77,7 +77,7 @@ main {
 .input-container {
     position: fixed;
     bottom: 0;
-    left: 60px;
+    left: 50px;
     /* Alinea el input-container con el borde izquierdo de la barra lateral */
     width: calc(100% - 80px);
     /* Ajusta el ancho para que el input-container tenga el mismo ancho que el área de chat */

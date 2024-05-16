@@ -108,15 +108,13 @@ main {
     color: #666;
 }
 
-.resumen {
+.datos-tarjeta .resumen p {
+    margin-bottom: 5px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
 }
 
 .resumen .precio {
-    font-size: 18px;
     font-weight: bold;
 }
 
@@ -128,4 +126,7 @@ main {
     font-weight: bold;
     cursor: pointer;
     border-radius: 5px;
+    margin-top: 20px;
+    align-self: flex-start;
+    width: 100%;
 }

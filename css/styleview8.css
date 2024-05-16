@@ -27,13 +27,17 @@ aside img {
 main {
     flex: 1;
     padding: 20px;
-    display: flex;
+    margin-left: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
+    color: #ffffff;
+    font-size: small;
 }
 
 .mi-carrito,
 .tipo-entrega {
-    background-color: #BDD6E8;
+
     padding: 20px;
     border-radius: 10px;
     flex: 1;
@@ -42,12 +46,15 @@ main {
 }
 
 .producto {
+    background-color: #BDD6E8;
     display: flex;
+    justify-content: start;
+    gap: 5rem;
     align-items: center;
     margin-bottom: 10px;
-    background-color: #fff;
     border-radius: 5px;
-    padding: 10px;
+    padding: 5px;
+    color: black;
 }
 
 .producto .imagen {
@@ -55,7 +62,9 @@ main {
     height: 50px;
     background-color: #ccc;
     border-radius: 5px;
-    margin-right: 10px;
+
+    display: flex;
+    align-items: center;
 }
 
 .contador {
@@ -79,14 +88,26 @@ main {
     font-weight: bold;
 }
 
+.checkbox {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+label {
+    font-weight: bold;
+}
+
+
+
 .tipo-entrega .opcion {
     display: flex;
-    flex-direction: column;
-    /* Para que los elementos se muestren uno debajo del otro */
-    align-items: flex-start;
-    /* Para alinear los elementos a la izquierda */
+    background-color: #BDD6E8;
+    align-items: center;
     margin-bottom: 10px;
+    color: black;
 }
+
 
 .tipo-entrega .opcion label {
     margin-left: 5px;
@@ -102,6 +123,10 @@ main {
     justify-content: space-between;
 }
 
+.tipo-entrega .resumen p:last-child {
+    font-weight: bold;
+}
+
 .siguiente {
     background-color: #E0FF4F;
     color: #000;
@@ -112,4 +137,5 @@ main {
     border-radius: 5px;
     margin-top: 20px;
     align-self: flex-start;
+    width: 100%;
 }
