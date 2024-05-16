@@ -1,0 +1,213 @@
+html, body{
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(to bottom, #0B3954 10%, #12608D 25%, #187EBA);
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding-bottom: 60;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header {
+    padding: 8px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__div-img {
+    width: 70px;
+}
+
+.nav__logo {
+    height: 80px;
+    width: 100%;
+}
+
+#nav__title__text{
+    color: #BDD6E8;
+}
+
+.form__container-row-profile-picture-input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.form__container-row-1{
+    padding-left: 20px;
+}
+
+.form__container-row-2{
+    padding: 40px;
+    text-align: center;
+}
+
+.form__container-row-title{
+    color: #E0FF4F;
+}
+
+.input_container input::placeholder, .input_container textarea::placeholder {
+    color: white; 
+}
+
+.form__container-row-data-input {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+}
+
+.form__container-row-profile-data-input-text{
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 40%;
+    background-color: transparent;
+    box-sizing: border-box;
+    color: white;
+}
+
+.form__container-row-data{
+    text-align: center;
+}
+
+.form__container-row-steps-button{
+    background-color: #E0FF4F;
+    color: #0B3954;
+    border-radius: 8px;
+    width: 35%;
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+    margin-top: 16px;
+}
+
+.form__container-row-steps-button:hover{
+    background-color: #D0FF00;
+}
+
+.form__container-row-progress{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    gap: 8px; /* Add this line to create a gap between flex items */
+}
+
+.form__container-row-progress-bar{
+    background-color: #E0FF4F;
+    height: 5px;
+    width: 15%;
+    border-radius: 8px;
+}
+
+.form__container-column{
+    width: 40%;
+}
+
+.form__pag2__container-row-2{
+    text-align: center;
+}
+
+.form__pag-2-container-row-2-columns{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.footer {
+    background-color: #0B3954;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+}
+
+.footer__div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.footer__div__container {
+    padding: 20px;
+}
+
+.footer__div__container-img {
+    width: 50%;
+}
+
+.footer__div__img {
+    width: 100%;
+}
+
+.footer__div__title {
+    display: inline;
+}
+
+.footer__div__ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+    font-weight: 500;
+}
+
+.footer__div__a:hover {
+    color: #E0FF4F;
+}
+
+.footer__hr {
+    width: 100%;
+}
+
+.footer__rights {
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+}
+
+#Lima{
+    height: 30%;
+    width: 30%;
+}
+
+/* Estilo para ofuscar el fondo */
+.popup {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Fijo en la pantalla */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparente */
+    z-index: 1000; /* Asegura que esté sobre otros elementos */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+/* Estilo para el contenido del popup */
+.popup__content {
+    background-color: #0B3954;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
