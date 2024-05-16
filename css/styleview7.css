@@ -6,11 +6,6 @@ body {
     padding: 0;
 }
 
-.container {
-    display: flex;
-    height: 100vh;
-}
-
 aside {
     background-color: #BDD6E8;
     width: 4%;
@@ -29,8 +24,18 @@ aside img {
     max-width: 80%;
 }
 
-.chat-container {
+main {
+    margin: auto;
+    max-width: 800px;
+    height: 100%;
+    padding: 0 20px;
+}
+
+
+
+.chat {
     flex: 1;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     padding-bottom: 60px;
@@ -38,34 +43,20 @@ aside img {
     overflow-y: auto;
 }
 
-.chat {
-    padding: 20px;
-}
-
-/*.message {
-    max-width: 70%;
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    word-wrap: break-word;
-    clear: both;
-} */
-
-.message-container {
-    margin-right: 80px;
-    /* Ajusta este valor según el ancho de la barra lateral */
-}
-
 .message {
+    margin-right: 80px;
     display: flex;
     margin-bottom: 10px;
 }
 
-.received {
+.message received {
     justify-content: flex-start;
+    margin-right: 80px;
+    display: flex;
+    margin-bottom: 10px;
 }
 
-.sent {
+.message sent {
     justify-content: flex-end;
 }
 
@@ -88,7 +79,7 @@ aside img {
 .input-container {
     position: fixed;
     bottom: 0;
-    left: 60px;
+    left: 61px;
     /* Alinea el input-container con el borde izquierdo de la barra lateral */
     width: calc(100% - 80px);
     /* Ajusta el ancho para que el input-container tenga el mismo ancho que el área de chat */
