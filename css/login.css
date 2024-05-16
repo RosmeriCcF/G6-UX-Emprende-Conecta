@@ -152,6 +152,8 @@ a {
     background-color: transparent;
     border: 2px solid #BDD6E8;
     border-radius: 10px;
+    color: #ffffff;
+    outline: none;
 }
 
 .div-form__form__input::placeholder{
