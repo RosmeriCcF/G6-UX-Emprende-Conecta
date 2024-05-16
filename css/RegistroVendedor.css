@@ -135,5 +135,41 @@ p{
     height: 200px;
     border-radius: 50%;
     background-color: #64889E;
-    background-size: cover;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000; 
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.popup__content {
+    background-color: #0B3954;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.form__container-row-steps-button{
+    background-color: #E0FF4F;
+    color: #0B3954;
+    border-radius: 8px;
+    width: 35%;
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+    margin-top: 16px;
+}
+
+.form__container-row-steps-button:hover{
+    background-color: #D0FF00;
 }

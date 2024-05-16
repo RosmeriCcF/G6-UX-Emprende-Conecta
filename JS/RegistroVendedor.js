@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
         seccion1.style.display = "none";
         seccion2.style.display = "flex";
         seccion3.style.display = "none";
+        seccion2.scrollIntoView({ behavior: "smooth" });
     });
 
     botonContinuarPagina2.addEventListener("click", function(event) {
@@ -17,19 +18,14 @@ document.addEventListener("DOMContentLoaded", function() {
         seccion1.style.display = "none";
         seccion2.style.display = "none";
         seccion3.style.display = "flex";
+        seccion3.scrollIntoView({ behavior: "smooth" });
     });
+});
 
-    const checkboxes = document.querySelectorAll(".restricciones");
-    const botones = document.querySelectorAll(".boton-01");
+botonRegistrar.addEventListener('click', function() {
+    document.querySelector('.popup').style.display = 'flex';
+});
 
-    botones.forEach((boton, index) => {
-        boton.addEventListener("click", function () {
-            checkboxes[index].checked = !checkboxes[index].checked;
-            if (checkboxes[index].checked) {
-                boton.classList.add("clicked");
-            } else {
-                boton.classList.remove("clicked");
-            }
-        });
-    });
+document.getElementById('Iniciar').addEventListener('click', function() {
+    document.querySelector('.popup').style.display = 'none';
 });
