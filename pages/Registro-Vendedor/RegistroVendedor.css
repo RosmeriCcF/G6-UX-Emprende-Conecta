@@ -2,3 +2,78 @@
     height: 60px;
     width: 60px;
 }
+
+.form_registro_vendedor{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 5%;
+    padding-left: 10%;
+}
+
+.container_row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+.container_column{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.input_container {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.input_container label {
+    margin-bottom: 5px; 
+}
+
+.input_container input, .input_container textarea{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    background-color: transparent;
+    box-sizing: border-box;
+}
+
+.input_container input::placeholder, .input_container textarea::placeholder {
+    color: white; 
+}
+
+.input_message_alert{
+    color: #E0FF4F;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+p{
+    color: white;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+.text_block{
+    display: flex;
+    background-color: #64889E;
+    margin: 5px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.maps{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 250px;
+    border: 0;
+    margin: 5%;
+}
